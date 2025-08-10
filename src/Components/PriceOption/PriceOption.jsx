@@ -13,7 +13,7 @@ const PriceOption = ({option}) => {
                         <h1 className='text-2xl font-bold '>Features</h1>
                         <ol className='text-sm '>
                             {
-                                features.map(feature=> <li className='flex gap-1 items-center text-sm'><IoCheckmarkCircleSharp className='text-lg text-green-500'/>{feature}</li>)
+                                features.map((feature,idx)=> <li className='flex gap-1 items-center text-sm'><IoCheckmarkCircleSharp key={idx} className='text-lg text-green-500'/>{feature}</li>)
                             }
                         </ol>
                         <div className='pt-3'>
